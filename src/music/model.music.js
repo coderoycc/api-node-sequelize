@@ -18,4 +18,8 @@ export const Music = sequelize.define('music', { // <== This is the model name
   genre:{
     type: DataTypes.STRING,
   }
+},
+{
+  timestamps: false
+  // No crea campos adicionales proporcionados por sequelize
 })
