@@ -21,5 +21,6 @@ export const Playlist = sequelize.define(
   },
   {
     timestamps: false,
+    schema: "api",
   }
 );

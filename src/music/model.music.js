@@ -25,5 +25,6 @@ export const Music = sequelize.define(
   {
     timestamps: false,
     // No crea campos adicionales proporcionados por sequelize
+    schema: "api",
   }
 );

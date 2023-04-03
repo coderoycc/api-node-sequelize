@@ -18,6 +18,8 @@ export const User = sequelize.define(
   {
     timestamps: false,
     // No crea campos adicionales proporcionados por sequelize
+    schema:"api"
+    // Usa el esquema API
   }
 );
 // Relacion de un usuario a muchas playlist
@@ -27,3 +29,4 @@ User.hasMany(Playlist, { foreignKey: "id_u", sourceKey: "id_u" });
 
 Playlist.belongsTo(User, { foreignKey: "id_u", targetKey: "id_u" });
 // belongsTo -> 1:1 Playlist pertenece a un Usuario
+// Playlist tiene una columna con el id de la tabla User

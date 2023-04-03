@@ -12,8 +12,13 @@ En esta API se maneja una base de datos con tablas en postgres.
 
 ## CREACIÓN DE RELACIONES
 * Para crear una relación UNO a UNO las asociaciones `hasOne` y `belongsTo` se usan juntas.
+````js
+Foo.hasOne(Bar); // FOO tiene un BAR
+Bar.belongsTo(Foo); // BAR pertenece a un FOO
+```
 * Para crear una relación de UNO a MUCHOS las asociaciones ``hasMany`` y ``belongsTo`` se usan juntas;
 * Para crear una relación de MUCHOS a MUCHOS ``belongsToMany`` se usa para dos llamadas juntas de las tablas involucradas.
+
 
 
 
