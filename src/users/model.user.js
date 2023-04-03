@@ -22,4 +22,7 @@ export const User = sequelize.define(
 );
 // Relacion de un usuario a muchas playlist
 User.hasMany(Playlist, { foreignKey: "id_u", sourceKey: "id_u" });
-Playlist.belongsTo(User, { foreignKey: "id_u", targetKey: "id_u"});
+// HasMany crea una columna en la tabla Playlist con el id de la tabla user
+// hasMany 
+
+Playlist.belongsTo(User, { foreignKey: "id_u", targetKey: "id_u" });
