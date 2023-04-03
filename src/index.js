@@ -7,13 +7,15 @@ import { sequelize } from './database/database.js';
 import './users/model.user.js';
 import './music/model.music.js';
 import './playlist/model.playlist.js';
-
+import './playlistMusic/model.playlistMusic.js';
 
 app.listen(process.env.PORT, async () => {
   console.log(`server is running on port ${process.env.PORT}`);
-  try {// prueba de la conexión de la base de datos
-    await sequelize.authenticate();
-    console.log('database is connected');
+  try {
+    // prueba de la conexión de la base de datos
+    //await sequelize.authenticate();
+    //console.log('database is connected');
+    await sequelize.sync(/* { force: true } */);
   } catch (error) { 
     console.log(error);
   }
