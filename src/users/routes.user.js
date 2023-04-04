@@ -1,11 +1,12 @@
 import { Router } from 'express';
+import * as userCtrl from './controller.user.js';
 const router = Router();
 
 router.get('/api/users', (req, res) => {
-  res.json('Getting Users');
+  return userCtrl.getUsers(req, res);
 });
 router.get('/api/users/:id', (req, res) => {
-  res.json('Getting Users');
+  return userCtrl.getUser(req, res);
 });
 router.post('/api/users/:id', (req, res) => {
   res.json('Getting Users');
