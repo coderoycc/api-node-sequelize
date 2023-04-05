@@ -54,7 +54,7 @@ export const updateUser = async (req, res) => {
   }
 
   return res.json({
-    message: "User updated successfully",
+    message: "Actualización correcta",
     data: users,
   });
 };
