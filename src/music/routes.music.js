@@ -3,19 +3,19 @@ import { Routes } from 'express'
 const router = Routes()
 
 router.get('/api/music', (req, res) => {
-  res.json('Getting Music')
+  res.json('Obtener Musicas')
 })
 router.get('/api/music/:id', (req, res) => {
-  res.json('Getting Music')
+  res.json('Obtener Música')
 })
 router.post('/api/music/:id', (req, res) => {
-  res.json('Getting Music')
+  res.json('Insertar Música')
 })
 router.put('/api/music/:id', (req, res) => {
-  res.json('Getting Music')
+  res.json('Editar Música')
 })
 router.delete('/api/music/:id', (req, res) => {
-  res.json('Getting Music')
+  res.json('Eliminar Música')
 })
 
 export default router;
