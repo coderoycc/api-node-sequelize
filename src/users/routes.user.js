@@ -9,13 +9,13 @@ router.get('/api/users/:id', (req, res) => {
   return userCtrl.getUser(req, res);
 });
 router.post('/api/users/:id', (req, res) => {
-  res.json('Getting Users');
+  res.json('INSERT USER??');
 });
 router.put('/api/users/:id', (req, res) => {
-  res.json('Getting Users');
+  res.json('UPDATE USER??');
 });
 router.delete('/api/users/:id', (req, res) => {
-  res.json('Getting Users');
+  res.json('DELETE USER??');
 });
 
 export default router;
