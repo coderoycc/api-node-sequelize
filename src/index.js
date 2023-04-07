@@ -15,6 +15,7 @@ app.listen(process.env.PORT, async () => {
     // prueba de la conexión de la base de datos
     //await sequelize.authenticate();
     //console.log('database is connected');
+    // Sincroniza la base de datos (force: true para borrar las tablas y crearlas de nuevo)
     await sequelize.sync(/* { force: true } */);
     console.log("APP listening on port " + process.env.PORT);
   } catch (error) { 
