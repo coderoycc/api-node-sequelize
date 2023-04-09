@@ -19,7 +19,9 @@ Bar.belongsTo(Foo); // BAR pertenece a un FOO
 * Para crear una relación de UNO a MUCHOS las asociaciones ``hasMany`` y ``belongsTo`` se usan juntas;
 * Para crear una relación de MUCHOS a MUCHOS ``belongsToMany`` se usa para dos llamadas juntas de las tablas involucradas.
 
-
+## Sincronización de la base de datos
+* Se usa `await sequelize.sync()` para sincronizar la base de datos. 
+* Al poner `{force : true }` elimina las tablas y las vuelve a crear.
 
 
 
